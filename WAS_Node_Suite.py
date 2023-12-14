@@ -13706,7 +13706,7 @@ if os.path.exists(BKAdvCLIP_dir):
         cstr('`CLIPTextEncode (BlenderNeko Advanced + NSP)` node enabled under `WAS Suite/Conditioning` menu.').msg.print()
     
 # opencv-python-headless handling
-if 'opencv-python' in packages() or 'opencv-python-headless' in packages():
+if 'opencv-python' in packages() or 'opencv-python-headless' in packages() or 'opencv-contrib-python' in packages():
     try:
         import cv2
         build_info = ' '.join(cv2.getBuildInformation().split())
